@@ -4,8 +4,8 @@ language:
     chapter_name: "Chapter "
 delete_merged_file: true
 rmd_files: ["index.Rmd",
-            "01-intro.Rmd",
-            "01.1-structured-prediction.Rmd",
+            "01-learning-theory.Rmd",
+            "01.1-PAC.Rmd",
             "02-literature.Rmd",
             "03-method.Rmd",
             "06-references.Rmd"]

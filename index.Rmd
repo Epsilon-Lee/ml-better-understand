@@ -1,7 +1,7 @@
 --- 
 title: "Epsilon's Machine Learning Notes"
 author: "Epsilon Guanlin Li"
-date: "`r Sys.Date()`"
+date: "Aug. 31 2019"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -12,4 +12,4 @@ github-repo: rstudio/bookdown-demo
 description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
 ---
 
-# Hello World
+# Prelogue {-}
