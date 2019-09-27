@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Epsilon’s Machine Learning Notes</title>
+  <title>Chapter 4 Robustness, Adversary and Causality | Epsilon’s Machine Learning Notes</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Epsilon’s Machine Learning Notes" />
+  <meta property="og:title" content="Chapter 4 Robustness, Adversary and Causality | Epsilon’s Machine Learning Notes" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Epsilon’s Machine Learning Notes" />
+  <meta name="twitter:title" content="Chapter 4 Robustness, Adversary and Causality | Epsilon’s Machine Learning Notes" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="computational-and-statistical-learning-theory.html"/>
+<link rel="prev" href="knowledge-tracing.html"/>
+<link rel="next" href="applications.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -118,22 +118,25 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Epsilon’s Machine Learning Notes</h1>
-<p class="author"><em>Epsilon Guanlin Li</em></p>
-<p class="date"><em>Aug. 31 2019</em></p>
-</div>
-<div id="prelogue" class="section level1 unnumbered">
-<h1>Prelogue</h1>
-
+<div id="robustness-adversary-and-causality" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> Robustness, Adversary and Causality</h1>
+<p>I think robust AI or trustful AI is the future of the AI systems that will be deployed to interact with human beings and facilitate their daily lives because of the guarantee of their <strong>worst-case behavior</strong>. However, current machine learning models are purely data-driven with less human prior knowledge and no guarantee or failure protection against unseen adversaries. The reason for such crispness might reside in the model’s ignorance of causality underlying the observations or resulted from current input representation with high dimensionality that causes unknown mystery of bug in that geometric space.</p>
+<p>To clarify this intertwined topic, in this chapter, I would like to search for hidden connections between robustness and causality or high dimensional statistics. The discussions mainly focus on model family of recent advanced deep neural networks. However, robustness and adversary are more historical concepts. The initial coverage of topics includes:</p>
+<ul>
+<li>Adversary and adversarial training;</li>
+<li>Adversarial training and task performance;</li>
+<li>Certified (or verified, provable) robustness;</li>
+<li>Applications in natural language processing.</li>
+</ul>
+<!--chapter:end:04-robustness-adversary-and-causality.Rmd--> 
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="computational-and-statistical-learning-theory.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="knowledge-tracing.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="applications.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -163,7 +166,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/index.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/04.1-applications.Rmd",
 "text": "Edit"
 },
 "history": {

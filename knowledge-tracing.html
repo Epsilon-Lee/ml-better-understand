@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Epsilon’s Machine Learning Notes</title>
+  <title>3.2 Knowledge Tracing | Epsilon’s Machine Learning Notes</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Epsilon’s Machine Learning Notes" />
+  <meta property="og:title" content="3.2 Knowledge Tracing | Epsilon’s Machine Learning Notes" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Epsilon’s Machine Learning Notes" />
+  <meta name="twitter:title" content="3.2 Knowledge Tracing | Epsilon’s Machine Learning Notes" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="computational-and-statistical-learning-theory.html"/>
+<link rel="prev" href="attribution.html"/>
+<link rel="next" href="robustness-adversary-and-causality.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -118,22 +118,26 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Epsilon’s Machine Learning Notes</h1>
-<p class="author"><em>Epsilon Guanlin Li</em></p>
-<p class="date"><em>Aug. 31 2019</em></p>
-</div>
-<div id="prelogue" class="section level1 unnumbered">
-<h1>Prelogue</h1>
+<div id="knowledge-tracing" class="section level2">
+<h2><span class="header-section-number">3.2</span> Knowledge Tracing</h2>
+<p>This direction of interpretability research reflects many researchers’ interests on the possible <strong>knowledge</strong> in the training data that can be learned by the model who applies those generalizable knowledge to perform well on unseen instances. This is a data-centered view of machine learning. It can shed light on agnostic machine learning from where any form of hypothesis class can be inspired.</p>
+<p>To me, the first data-centric shift of interpretability research starts from Koh and Liang’s <a href="https://arxiv.org/abs/1703.04730">Understanding Black-box Predictions via Influence Functions</a> <span class="citation">(Koh and Liang <a href="references.html#ref-Koh2017UnderstandingBP">2017</a>)</span>. They renew a classic technique in robust statistics called <strong>influence function</strong> to analyze the training effect of single data point removel: how does that data point influence the prediction behavior of the model <span class="math inline">\(\mathcal{M}\)</span> on unseen instance <span class="math inline">\(\mathbb{x}\)</span>.</p>
+<p>To think more about the research focus of <span class="citation">Koh and Liang (<a href="references.html#ref-Koh2017UnderstandingBP">2017</a>)</span>, they are trying to efficiently solve the estimation or optimization problem:
+<span class="math display">\[
+\arg\min_{\theta} \frac{1}{N-1} \sum_{\mathbb{z} \in \mathcal{D}^{tr}_{\setminus i}} \mathcal{L}(z; \theta)
+\]</span>
+where <span class="math inline">\(\mathbb{z}=(\mathbb{x}, y)\)</span> is a training instance, <span class="math inline">\(\mathcal{D}^{tr}\)</span> is the training set with <span class="math inline">\(N\)</span> instances in total. <span class="math inline">\(\mathcal{D}^{tr}_{\setminus i}\)</span> means remove the <span class="math inline">\(i\)</span>-th instance from the training set.</p>
+<p>The above estimation problem has the same form of the original estimation problem where the <span class="math inline">\(i\)</span>-the instance is not removed. This seems familar to tranditional statistical learning researchers since this is just one-round of <strong>leave-one-out</strong> cross-validation.</p>
 
 </div>
+<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="computational-and-statistical-learning-theory.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="attribution.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="robustness-adversary-and-causality.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -163,7 +167,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/index.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-interpretability.Rmd",
 "text": "Edit"
 },
 "history": {
