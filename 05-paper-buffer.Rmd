@@ -11,8 +11,7 @@ Here we categorize recent papers into several promising topics.
 ## Generalization and meta-learning
 
 - [Towards Understanding Generalization in Gradient-Based Meta-Learning](https://openreview.net/pdf?id=SygT21SFvB), ICLR 2020.
-- [Disentangling Trainability and Generalization in Deep Learning]
-(https://openreview.net/pdf?id=Bkx1mxSKvB), ICLR 2020.
+- [Disentangling Trainability and Generalization in Deep Learning](https://openreview.net/pdf?id=Bkx1mxSKvB), ICLR 2020.
 - [The Intriguing Role of Module Criticality in The Generalization of Deep Networks](https://openreview.net/pdf?id=S1e4jkSKvB), ICLR 2020.
 - [Test-time Training For Out-of-Distribution Generalization](https://openreview.net/pdf?id=rJxbJeHFPS), ICLR 2020.
 
