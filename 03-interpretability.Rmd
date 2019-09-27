@@ -1,0 +1,23 @@
+# Interpretability
+
+Interpretability is recently received huge attention in the AI community, especially for the data-driven machine learning paradigm.
+
+## Attribution
+
+Interpretability is a means to build trustworthy machine learning system which can generate 'rationales' to explain why it make a decision.
+
+Today (Sep. 19), we are going to dig into a recent NeurIPS paper [Robust Attribution Regularization](https://arxiv.org/abs/1905.09957) which introduces the concept of robust attribution. Their work is built on the Integrated Gradient (IG) methods by proposing training objectives in classic robust optimization to achieve robust IG.
+
+## Knowledge Tracing
+
+This direction of interpretability research reflects many researchers' interests on the possible **knowledge** in the training data that can be learned by the model who applies those generalizable knowledge to perform well on unseen instances. This is a data-centered view of machine learning. It can shed light on agnostic machine learning from where any form of hypothesis class can be inspired.
+
+To me, the first data-centric shift of interpretability research starts from Koh and Liang's [Understanding Black-box Predictions via Influence Functions](https://arxiv.org/abs/1703.04730) [@Koh2017UnderstandingBP]. They renew a classic technique in robust statistics called **influence function** to analyze the training effect of single data point removel: how does that data point influence the prediction behavior of the model $\mathcal{M}$ on unseen instance $\mathbb{x}$.
+
+To think more about the research focus of @Koh2017UnderstandingBP, they are trying to efficiently solve the estimation or optimization problem:
+$$
+\arg\min_{\theta} \frac{1}{N-1} \sum_{\mathbb{z} \in \mathcal{D}^{tr}_{\setminus i}} \mathcal{L}(z; \theta)
+$$
+where $\mathbb{z}=(\mathbb{x}, y)$ is a training instance, $\mathcal{D}^{tr}$ is the training set with $N$ instances in total. $\mathcal{D}^{tr}_{\setminus i}$ means remove the $i$-th instance from the training set.
+
+The above estimation problem has the same form of the original estimation problem where the $i$-the instance is not removed. This seems familar to tranditional statistical learning researchers since this is just one-round of **leave-one-out** cross-validation.

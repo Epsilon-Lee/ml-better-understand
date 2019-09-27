@@ -1,0 +1,11 @@
+# Topics in Deep Learning
+
+This chapter is dedicated to several important and interesting topics in the (recent) development of deep learning with theoretic considerations. I will highlight the theory-oriented part of the story for every topics. The mainly covered topics are listed below:
+
+- Generalization in Deep Learning;
+- Landscape and visualization;
+- Optimization-related insights;
+  + initialization;
+  + learning schedule;
+  + curriculum learning;
+

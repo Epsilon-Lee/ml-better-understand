@@ -1,7 +1,0 @@
-## Structured Prediction
-
-Structured Prediction (SP) is a very important part of machine learning literature.
-
-
-## Inductive Bias
-

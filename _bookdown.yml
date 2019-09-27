@@ -6,6 +6,9 @@ delete_merged_file: true
 rmd_files: ["index.Rmd",
             "01-learning-theory.Rmd",
             "01.1-PAC.Rmd",
-            "02-literature.Rmd",
-            "03-method.Rmd",
-            "06-references.Rmd"]
+            "02-topics-in-deep-learning.Rmd",
+            "03-interpretability.Rmd",
+            "04-robustness-adversary-and-causality.Rmd",
+            "04.1-applications.Rmd",
+            "05-paper-buffer.Rmd",
+            "references.Rmd"]
