@@ -7,6 +7,7 @@ Here we categorize recent papers into several promising topics.
 - [Distribution-Guided Local Explanation for Black-box Classifiers](https://openreview.net/pdf?id=rJgFjREtwr), ICLR 2020.
 - [Evaluation and Methods for Explanation through Robustness Analysis](https://openreview.net/pdf?id=Hye4KeSYDr), ICLR 2020.
 - [Interpretable Network Structure for Modeling Contextual Dependency](https://openreview.net/pdf?id=BkgUB1SYPS), ICLR 2020.
+- [Certifiably Robust Interpretation for Deep Learning](https://openreview.net/pdf?id=rkxVz1HKwB), ICLR 2020.
 
 ## Generalization and meta-learning
 
@@ -14,14 +15,12 @@ Here we categorize recent papers into several promising topics.
 - [Disentangling Trainability and Generalization in Deep Learning](https://openreview.net/pdf?id=Bkx1mxSKvB), ICLR 2020.
 - [The Intriguing Role of Module Criticality in The Generalization of Deep Networks](https://openreview.net/pdf?id=S1e4jkSKvB), ICLR 2020.
 - [Test-time Training For Out-of-Distribution Generalization](https://openreview.net/pdf?id=rJxbJeHFPS), ICLR 2020.
-
+- [Entropy Penalty: Towards Generalization Beyond The IID Assumption](https://openreview.net/pdf?id=Byes0TNFDS), ICLR 2020.
 
 ## Curriculum learning
 
 - [Dynamic Instance Hardness](https://openreview.net/pdf?id=H1lXVJStwB), ICLR 2020.
-
 - [Curriculum Loss: Robust Learning and Generalization Against Labrl Corruption](https://openreview.net/pdf?id=rkgt0REKwS), ICLR 2020.
-
 - [All Neural Networks Are Created Equally](https://openreview.net/pdf?id=HJgub1SKDH), ICLR 2020.
 
 ## Understanding intrinsic representation
@@ -33,12 +32,12 @@ Here we categorize recent papers into several promising topics.
 ## Data augmentation
 
 - [Revisiting Self-Training for Neural Sequence Generation](https://openreview.net/pdf?id=SJgdnAVKDH), ICLR 2020.
-
 - [Rethinking Data Augmentation: Self-supervision and Self-distillation](https://openreview.net/pdf?id=SkliR1SKDS), ICLR 2020.
-
 - [Unsupervised Data Augmentation for Consistency Training](https://openreview.net/pdf?id=ByeL1R4FvS), ICLR 2020.
-
 - [Meta Dropout: Learning to Perturb Latent Features For Generalization](https://openreview.net/pdf?id=BJgd81SYwr), ICLR 2020.
+- [Implicit Semantic Data Augmentation for Deep Networks](https://arxiv.org/pdf/1909.12220.pdf), NeurIPS 2019.
+- [When Covariate-Shifted Data Augmentation Increases Test Error And How To Fix It](https://openreview.net/pdf?id=ByxduJBtPB), ICLR 2020.
+- [A Critical Analysis of Self-supervision, or What We Can Learn From A Single Image](https://openreview.net/pdf?id=B1esx6EYvr), ICLR 2020.
 
 ## Robustness
 
@@ -62,6 +61,9 @@ Here we categorize recent papers into several promising topics.
 - [Detecting Extrapolation with Local Ensembles](https://openreview.net/pdf?id=BJl6bANtwH), ICLR 2020.
 - [Multi-stage Influence Function](https://openreview.net/pdf?id=r1geR1BKPr), ICLR 2020.
 - [An Empirical and Comparative Analysis of Data Valuation with Scalable Algorithms](https://openreview.net/pdf?id=SygBIxSFDS), ICLR 2020.
+- [Data Valuation Using Reinforcement Learning](https://arxiv.org/pdf/1909.11671.pdf), ICLR 2020.
+- [Dataset Distillation](https://openreview.net/pdf?id=ryxO3gBtPB), ICLR 2020.
+
 
 ## Machine Translation
 
