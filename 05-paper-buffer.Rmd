@@ -8,6 +8,7 @@ Here we categorize recent papers into several promising topics.
 - [Evaluation and Methods for Explanation through Robustness Analysis](https://openreview.net/pdf?id=Hye4KeSYDr), ICLR 2020.
 - [Interpretable Network Structure for Modeling Contextual Dependency](https://openreview.net/pdf?id=BkgUB1SYPS), ICLR 2020.
 - [Certifiably Robust Interpretation for Deep Learning](https://openreview.net/pdf?id=rkxVz1HKwB), ICLR 2020.
+- [Statistically Consistent Saliency Estimation](https://openreview.net/pdf?id=BJlrZyrKDB), ICLR 2020.
 
 ## Generalization and meta-learning
 
@@ -16,6 +17,7 @@ Here we categorize recent papers into several promising topics.
 - [The Intriguing Role of Module Criticality in The Generalization of Deep Networks](https://openreview.net/pdf?id=S1e4jkSKvB), ICLR 2020.
 - [Test-time Training For Out-of-Distribution Generalization](https://openreview.net/pdf?id=rJxbJeHFPS), ICLR 2020.
 - [Entropy Penalty: Towards Generalization Beyond The IID Assumption](https://openreview.net/pdf?id=Byes0TNFDS), ICLR 2020.
+- [A Meta-Transfer Objective For Learning to Disentangle Causal Mechanisms](https://openreview.net/pdf?id=ryxWIgBFPS), ICLR 2020, by Yoshua Bengio.
 
 ## Curriculum learning
 
@@ -28,6 +30,11 @@ Here we categorize recent papers into several promising topics.
 - [Towards Interpreting Deep Neural Networks via Understanding Layer Behaviors](https://openreview.net/pdf?id=rkxMKerYwr), ICLR 2020.
 - [Understanding and Improving Information Transfer in Multi-Task Learning](https://openreview.net/pdf?id=SylzhkBtDB), ICLR 2020.
 - [Attention Interpretability Across NLP Tasks](https://openreview.net/pdf?id=BJe-_CNKPH), ICLR 2020.
+
+### Representation learning: principles and methods
+
+- [Regulary Varying Representations for Sentence Embedding](https://openreview.net/pdf?id=HyljzgHtwS), ICLR 2020.
+  + dilation invariance property to handle heavy-tail phenomenon; to do data augmentation
 
 ## Data augmentation
 
@@ -50,7 +57,7 @@ Here we categorize recent papers into several promising topics.
 - [Fooling Pre-trained Language Models: An evolutionary approach to generate wrong sentences with high acceptability score](https://openreview.net/pdf?id=S1gV5gHKvB), ICLR 2020.
 - [Pragmatic Evaluation of Adversarial Examples in Natural Language](https://openreview.net/pdf?id=BkxmKgHtwH), ICLR 2020.
 
-## Compositionality
+## Compositionality {#compositionality-pb}
 
 - [Towards Hierarchical Importance Attribution: Explaining Compositional Semantics for Neural Sequence Models](https://openreview.net/pdf?id=BkxRRkSKwr), ICLR 2020.
 - [Measuring Compositional Generalization: A Comprehensive Method on Realistic Data](https://openreview.net/pdf?id=SygcCnNKwr), ICLR 2020.
