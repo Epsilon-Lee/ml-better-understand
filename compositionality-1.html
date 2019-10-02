@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>5.4 Understanding intrinsic representation | Epsilon’s Machine Learning Notes</title>
+  <title>5.7 Compositionality | Epsilon’s Machine Learning Notes</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="5.4 Understanding intrinsic representation | Epsilon’s Machine Learning Notes" />
+  <meta property="og:title" content="5.7 Compositionality | Epsilon’s Machine Learning Notes" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="5.4 Understanding intrinsic representation | Epsilon’s Machine Learning Notes" />
+  <meta name="twitter:title" content="5.7 Compositionality | Epsilon’s Machine Learning Notes" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="curriculum-learning.html"/>
-<link rel="next" href="data-augmentation.html"/>
+<link rel="prev" href="robustness.html"/>
+<link rel="next" href="influence-function-and-knowledge-tracing.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -87,15 +87,13 @@
 <li class="chapter" data-level="5.1" data-path="interpretability-1.html"><a href="interpretability-1.html"><i class="fa fa-check"></i><b>5.1</b> Interpretability</a></li>
 <li class="chapter" data-level="5.2" data-path="generalization-and-meta-learning.html"><a href="generalization-and-meta-learning.html"><i class="fa fa-check"></i><b>5.2</b> Generalization and meta-learning</a></li>
 <li class="chapter" data-level="5.3" data-path="curriculum-learning.html"><a href="curriculum-learning.html"><i class="fa fa-check"></i><b>5.3</b> Curriculum learning</a></li>
-<li class="chapter" data-level="5.4" data-path="understanding-intrinsic-representation.html"><a href="understanding-intrinsic-representation.html"><i class="fa fa-check"></i><b>5.4</b> Understanding intrinsic representation</a><ul>
-<li class="chapter" data-level="5.4.1" data-path="understanding-intrinsic-representation.html"><a href="understanding-intrinsic-representation.html#representation-learning-principles-and-methods"><i class="fa fa-check"></i><b>5.4.1</b> Representation learning: principles and methods</a></li>
-</ul></li>
+<li class="chapter" data-level="5.4" data-path="understanding-intrinsic-representation.html"><a href="understanding-intrinsic-representation.html"><i class="fa fa-check"></i><b>5.4</b> Understanding intrinsic representation</a></li>
 <li class="chapter" data-level="5.5" data-path="data-augmentation.html"><a href="data-augmentation.html"><i class="fa fa-check"></i><b>5.5</b> Data augmentation</a></li>
 <li class="chapter" data-level="5.6" data-path="robustness.html"><a href="robustness.html"><i class="fa fa-check"></i><b>5.6</b> Robustness</a><ul>
 <li class="chapter" data-level="5.6.1" data-path="robustness.html"><a href="robustness.html#certified-robustness"><i class="fa fa-check"></i><b>5.6.1</b> Certified robustness</a></li>
 <li class="chapter" data-level="5.6.2" data-path="robustness.html"><a href="robustness.html#adversarial-examples"><i class="fa fa-check"></i><b>5.6.2</b> Adversarial examples</a></li>
 </ul></li>
-<li class="chapter" data-level="5.7" data-path="compositionality-pb.html"><a href="compositionality-pb.html"><i class="fa fa-check"></i><b>5.7</b> Compositionality</a></li>
+<li class="chapter" data-level="5.7" data-path="compositionality-1.html"><a href="compositionality-1.html"><i class="fa fa-check"></i><b>5.7</b> Compositionality</a></li>
 <li class="chapter" data-level="5.8" data-path="influence-function-and-knowledge-tracing.html"><a href="influence-function-and-knowledge-tracing.html"><i class="fa fa-check"></i><b>5.8</b> Influence Function and Knowledge Tracing</a></li>
 <li class="chapter" data-level="5.9" data-path="machine-translation.html"><a href="machine-translation.html"><i class="fa fa-check"></i><b>5.9</b> Machine Translation</a><ul>
 <li class="chapter" data-level="5.9.1" data-path="machine-translation.html"><a href="machine-translation.html#training"><i class="fa fa-check"></i><b>5.9.1</b> Training</a></li>
@@ -123,30 +121,21 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="understanding-intrinsic-representation" class="section level2">
-<h2><span class="header-section-number">5.4</span> Understanding intrinsic representation</h2>
+<div id="compositionality-1" class="section level2">
+<h2><span class="header-section-number">5.7</span> Compositionality</h2>
 <ul>
-<li><a href="https://openreview.net/pdf?id=rkxMKerYwr">Towards Interpreting Deep Neural Networks via Understanding Layer Behaviors</a>, ICLR 2020.</li>
-<li><a href="https://openreview.net/pdf?id=SylzhkBtDB">Understanding and Improving Information Transfer in Multi-Task Learning</a>, ICLR 2020.</li>
-<li><a href="https://openreview.net/pdf?id=BJe-_CNKPH">Attention Interpretability Across NLP Tasks</a>, ICLR 2020.</li>
+<li><a href="https://openreview.net/pdf?id=BkxRRkSKwr">Towards Hierarchical Importance Attribution: Explaining Compositional Semantics for Neural Sequence Models</a>, ICLR 2020.</li>
+<li><a href="https://openreview.net/pdf?id=SygcCnNKwr">Measuring Compositional Generalization: A Comprehensive Method on Realistic Data</a>, ICLR 2020.</li>
+<li><a href="https://openreview.net/pdf?id=rJxbJeHFPS">What Can Neural Networks Reason About?</a>, ICLR 2020.</li>
 </ul>
-<div id="representation-learning-principles-and-methods" class="section level3">
-<h3><span class="header-section-number">5.4.1</span> Representation learning: principles and methods</h3>
-<ul>
-<li><a href="https://openreview.net/pdf?id=HyljzgHtwS">Regulary Varying Representations for Sentence Embedding</a>, ICLR 2020.
-<ul>
-<li>dilation invariance property to handle heavy-tail phenomenon; to do data augmentation</li>
-</ul></li>
-</ul>
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="curriculum-learning.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="data-augmentation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="robustness.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="influence-function-and-knowledge-tracing.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
