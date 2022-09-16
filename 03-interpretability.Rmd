@@ -2,11 +2,19 @@
 
 Interpretability is recently received huge attention in the AI community, especially for the data-driven machine learning paradigm.
 
+> "Papers provide diverse and sometimes non-overlapping motivations for interpretability." [@Lipton:2018:MMI:3236386.3241340].
+
 ## Attribution
 
 Interpretability is a means to build trustworthy machine learning system which can generate 'rationales' to explain why it make a decision.
 
 Today (Sep. 19), we are going to dig into a recent NeurIPS paper [Robust Attribution Regularization](https://arxiv.org/abs/1905.09957) which introduces the concept of robust attribution. Their work is built on the Integrated Gradient (IG) methods by proposing training objectives in classic robust optimization to achieve robust IG.
+
+### Saliency with Guarantees
+
+- [Discovering Conditionally Salient Features with Statistical Guarantees](https://arxiv.org/pdf/1905.12177.pdf), ICML 2019.
+- [Interpreting Black-Box Models via Hypothesis Testing](https://arxiv.org/pdf/1904.00045.pdf), arXiv Apr. 2019.
+- [Statistical Consistent Saliency Estimation](https://openreview.net/pdf?id=BJlrZyrKDB), ICLR 2020.
 
 ## Knowledge Tracing
 
@@ -21,3 +29,53 @@ $$
 where $\mathbb{z}=(\mathbb{x}, y)$ is a training instance, $\mathcal{D}^{tr}$ is the training set with $N$ instances in total. $\mathcal{D}^{tr}_{\setminus i}$ means remove the $i$-th instance from the training set.
 
 The above estimation problem has the same form of the original estimation problem where the $i$-the instance is not removed. This seems familar to tranditional statistical learning researchers since this is just one-round of **leave-one-out** cross-validation.
+
+### Literature Survey
+
+This section gives a literature survey based on papers collected in [this file](https://github.com/Epsilon-Lee/paper-jam/blob/main/interpretability-analysis-and-evaluation-jam.md).
+
+## Compositionality
+
+Compositionality is a concept from linguistic philosophy, it means in a symbol system, e.g. the English language, the meaning of a symbol sequence can be computed through the composition (a meaning composition function) of its sub-sequences.
+
+### Related Works in ICLR 2020
+
+This part is a summary of the recent published ICLR20 anonymous submissions. You can find it in the [paper buffer section](#compositionality-pb) for compositionality.
+
+
+## Understanding internal representation
+
+Neural networks learn continuous hidden representations as a
+byproduct of the main supervised or unsupervised task.
+There are many works try to shed light on the question:
+what interpretable information is learned and entailed in these
+hidden representations. This article is try to group them in
+a systematic way and try to seek for frontiers in this pursuit.
+
+**Representation probe** is one of the most frequently used technique
+for representation explanation, see Table SM1 in [@belinkov:2019:tacl]
+for a enumerative review of recent efforts on this very direction.
+However, a recent EMNLP 2019 best paper runner up [@hewitt2019control]
+argue that the capacity of the probe should be considered while using
+the constructed probing task. Let us discuss their benefit and criticism
+at the same time below.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,18 +3,14 @@ bookdown::gitbook:
   split_by: section
   split_bib: FALSE
   config:
-    collapse: subsection
     toc:
       before: |
         <li><a href="./">Epsilon's Machine Learning Notes</a></li>
       after: |
-        <li><a href="https://github.com/Epsilon-Lee" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
-    download: ["pdf", "epub"]
-bookdown::pdf_book:
-  includes:
-    in_header: preamble.tex
-  latex_engine: xelatex
-  citation_package: natbib
-  keep_tex: yes
-bookdown::epub_book: default
+        <li><a href="https://Epsilon-Lee.github.io" target="blank">Back to Epsilon's home</a></li>
+      collapse: section
+    download: null
+    search: null
+    fontsettings:
+      family: ["serif"]
+    sharing: null

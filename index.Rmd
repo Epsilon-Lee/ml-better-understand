@@ -13,3 +13,16 @@ description: "This is a minimal example of using the bookdown package to write a
 ---
 
 # Prelogue {-}
+
+The inspiration of doing this notes is through the encouraging of a quote that I love most:
+
+> "But you go to a great school, not for knowledge so much as for arts and habits; for the habit of attention, for the art of expression, [...] for the art of entering quickly into another person's thoughts, [...] for taste, for discrimination, for mental courage and mental soberness." --- William Johnson Corg.
+
+Knowledge is for distilling, critisizing and sharing. That is the taste of this notes. Specifically, I am also inspired by several researchers and their works in this field of machine learning:
+
+- Zachary C. Lipton and Jacob Steinhardt's [Troubling Trends in Machine Learning Scholarship](https://arxiv.org/abs/1807.03341), based on which I try to distinguish the real inspiring and will-be-test-of-time works.
+- Ferenc Huszár's blog [inFERENCe](https://www.inference.vc/), the style of simplicity and thought-provoking.
+- Notes by [Karl Stratos](http://karlstratos.com/#notes), succint and in-depth reformulation.
+- Francis Bach's [blog](https://francisbach.com/) on statistics and optimization, real master piece!
+- Cosma Rohilla Shalizi's [notebook](http://bactra.org/notebooks/), very 
+Retro.

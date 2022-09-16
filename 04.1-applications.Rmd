@@ -21,3 +21,10 @@ examples for natural langauge inputs.
 
 - HotFlip [@ebrahimi2017hotflip]: 
 - Paraphrase-based advesarials [@Ribeiro2018SemanticallyEA]:
+
+##### How to group adversarial papers in NLP?
+
+- [Generating Natural Language Adversarial Examples](https://arxiv.org/pdf/1804.07998.pdf), arXiv Apr. 2018.
+- [Robust Neural Machine Translation with Doubly Adversarial Inputs](https://arxiv.org/pdf/1906.02443.pdf), ACL 2019.
+- [Discrete Adversarial Attacks and Submodular Optimization with Applications to Text Classification](https://www.sysml.cc/doc/2019/79.pdf), SysML 2019.
+- [GenAttack: Practical Black-box Attacks with Gradient-Free Optimization](https://arxiv.org/pdf/1805.11090.pdf), arXiv May 2018.

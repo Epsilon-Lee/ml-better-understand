@@ -6,3 +6,4 @@ _book/
 book-output/
 push_bookoutput.sh
 bookdown-demo.log
+05-paper-buffer.Rmd.bak

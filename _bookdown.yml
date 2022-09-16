@@ -1,4 +1,4 @@
-book_filename: "bookdown-demo"
+book_filename: "mlbu"
 language:
   ui:
     chapter_name: "Chapter "
@@ -10,5 +10,5 @@ rmd_files: ["index.Rmd",
             "03-interpretability.Rmd",
             "04-robustness-adversary-and-causality.Rmd",
             "04.1-applications.Rmd",
-            "05-paper-buffer.Rmd",
+            "05-out-of-distribution-learning.Rmd",
             "references.Rmd"]

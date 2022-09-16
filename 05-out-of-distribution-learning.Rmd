@@ -1,0 +1,7 @@
+# Out-of-Distribution Learning
+
+> Jan. 10 2022
+
+This part is mainly about machine learning under Out-of-Distribution (OOD) setting and OOD detection for trustworthy machine learning.
+The papers summarized here are collected by [this file](https://github.com/Epsilon-Lee/paper-jam/blob/main/ood-detection-robustness-and-generalization.md) from my github repository.
+I would like to first cover several crucial works about OOD detection and then how to generalize under OOD setting.
